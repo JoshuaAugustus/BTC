@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_btc
+    description: "Staging model for Bitcoin transactions"
+    columns:
+      - name: HASHKEY
+        tests:
+         - unique
+         - not_null
